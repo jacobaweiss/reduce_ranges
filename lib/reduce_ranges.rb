@@ -2,7 +2,7 @@ require 'reduce_ranges/version'
 
 class Array
   def reduce_ranges
-  	raise TypeError unless all? { |el| el.is_a?(Fixnum) }
+    raise TypeError unless all? { |el| el.is_a?(Fixnum) }
 
     arr = self.dup
     arr.each_with_index do |el, index|
