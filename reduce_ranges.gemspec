@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['jacobaweiss@gmail.com']
   spec.summary       = %q{Reduces consecutive elements of an array of integers into ranges.}
   spec.description   = %q{Given an array of integers, Array#reduce_ranges will return an array with all consecutive integers converted into ranges.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/jacobaweiss/reduce_ranges"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
