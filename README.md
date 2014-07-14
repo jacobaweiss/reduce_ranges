@@ -30,6 +30,8 @@ Note that this only works on arrays of integers. If you call it on an array with
 # etc..
 ```
 
+Shout outs to @Calyhre for the current implementation and @lkdjiin for his blog posts on the subject!
+
 ## Contributing
 
 1. Fork it ( https://github.com/jacobaweiss/reduce_ranges/fork )
