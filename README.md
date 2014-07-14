@@ -30,7 +30,7 @@ Note that this only works on arrays of integers. If you call it on an array with
 # etc..
 ```
 
-Shout outs to @Calyhre for the current implementation and @lkdjiin for his blog posts on the subject!
+Shout outs to [@calyhre](https://github.com/Calyhre) for the current implementation and [@lkdjiin](https://github.com/lkdjiin) for his blog posts on the subject!i
 
 ## Contributing
 
