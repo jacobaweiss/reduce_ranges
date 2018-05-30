@@ -1,6 +1,6 @@
 # ReduceRanges
 
-Reduce consecutive integers in an array into ranges.
+Reduce consecutive integers or dates in an array into ranges.
 
 ## Installation
 
@@ -18,12 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-ReduceRanges adds an extension to the Array object. To use it, call `#reduce_ranges` on an array of integers:
+ReduceRanges adds an extension to the Array object. To use it, call `#reduce_ranges` on an array of integers or dates:
 ```ruby
 [-3, -2, -1, 1, 3, 4, 5].reduce_ranges #=> [-3..-1, 1, 3..5]
 ```
 
-Note that this only works on arrays of integers. If you call it on an array with any other kind of element, it will raise an error:
+```ruby
+[Date.new(2018,5,30), Date.new(2018,5,31), Date.new(2018,6,1), Date.new(2018,6,3), Date.new(2018,6,5),Date.new(2018,6,6)].reduce_ranges #=> [Wed, 30 May 2018..Fri, 01 Jun 2018, Sun, 03 Jun 2018, Tue, 05 Jun 2018..Wed, 06 Jun 2018]
+```
+
+Note that this only works on arrays of integers or dates. If you call it on an array with any other kind of element, it will raise an error:
 ```ruby
 %w(what it do).reduce_ranges #=> TypeError
 [1.0, 2.0, 3.0].reduce_ranges #=> TypeError
